@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
+import Container from "react-bootstrap/Container";
+import "./index.css";
+// import App from "./App";
+import Movies from "./practice/Movies";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Container>
+      <Movies />
+    </Container>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
